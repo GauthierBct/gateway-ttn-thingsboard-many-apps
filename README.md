@@ -30,7 +30,19 @@ pip3 install requests
 ```
 Lorsque les deux sont installées, faites :
 ```bash
-pip3 list
+$ pip3 list
+Package    Version
+---------- ---------
+certifi    2020.12.5
+chardet    4.0.0
+idna       2.10
+paho-mqtt  1.5.1
+pip        21.1.2
+requests   2.25.1
+setuptools 41.2.0
+six        1.15.0
+urllib3    1.26.4
+wheel      0.33.1
 ```
 Normalement, les deux bibliothèques installées sont listées et les autres utilisées sont déjà disponibles l'environnement par défaut de python3. 
 

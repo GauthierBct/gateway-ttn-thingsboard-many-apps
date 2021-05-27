@@ -15,7 +15,7 @@ Le template de ce fichier est [commissioning_sample_1file.ini](https://github.co
 - `[THINGS]` : les informations nécessaires pour mettre les datas sur Thingsboard
 
 ## Fichier `gateway_ttn_thing_1file.py`
-Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py). Par défaut le nom du fichier commissioning est : `commissioning.ini`. Vous pouvez le changer dans le programme python [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py) à la ligne 9 :
+Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py). Par défaut le nom du fichier commissioning est : `commissioning.ini`. Vous pouvez le changer dans le programme python [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py) à la ligne 8 :
 ```python
 file_name = "commissioning.ini"
 dPrm = getIniParameters(file_name)

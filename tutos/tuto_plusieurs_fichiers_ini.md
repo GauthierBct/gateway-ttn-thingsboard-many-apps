@@ -25,37 +25,38 @@ python3 gateway_ttn_thing_filename.py <nom_fichier1.ini> <nom_fichier2.ini>
 
 Dans mon cas, j'ai deux applications et voici l'affichage que vous devez avoir :
 ```
-$ python3 gateway_ttn_thing_filename.py commissioning_supagro.ini commissioning_stm.ini
-2021/05/27 15:33:07: Start Gateway TTN to Thingsboard (pid : 31563)
-2021/05/27 15:33:07: Loading configuration in commissioning_supagro.ini
-2021/05/27 15:33:07: Connection pour l'application supagro-test (pid : 31565)
-2021/05/27 15:33:07: 1/3 - Start MQTT Client (pid : 31565)
-2021/05/27 15:33:07: 2/3 - Connection in progress...
-2021/05/27 15:33:07: 3/3 - Client MQTT is connected with TTN broker
-2021/05/27 15:33:07: Connexion MQTT: code retour= 0
-2021/05/27 15:33:07: Connexion MQTT: Statut= OK
+ $ python3 gateway_ttn_thing_filename.py commissioning_supagro.ini commissioning_stm.ini 
+2021/05/27 15:43:39: Start Gateway TTN to Thingsboard (pid : 31780)
 
-2021/05/27 15:33:09: Loading configuration in commissioning_stm.ini
-2021/05/27 15:33:09: Connection pour l'application stm32-kit (pid : 31566)
-2021/05/27 15:33:09: 1/3 - Start MQTT Client (pid : 31566)
-2021/05/27 15:33:09: 2/3 - Connection in progress...
-2021/05/27 15:33:09: 3/3 - Client MQTT is connected with TTN broker
-2021/05/27 15:33:09: Connexion MQTT: code retour= 0
-2021/05/27 15:33:09: Connexion MQTT: Statut= OK
+2021/05/27 15:43:39: Loading configuration in commissioning_supagro.ini
+2021/05/27 15:43:39: Connection pour l'application supagro-test (pid : 31782)
+2021/05/27 15:43:39: 1/3 - Start MQTT Client (pid : 31782)
+2021/05/27 15:43:39: 2/3 - Connection in progress...
+2021/05/27 15:43:39: 3/3 - Client MQTT is connected with TTN broker
+2021/05/27 15:43:39: Connexion MQTT: code retour= 0
+2021/05/27 15:43:39: Connexion MQTT: Statut= OK
+
+2021/05/27 15:43:41: Loading configuration in commissioning_stm.ini
+2021/05/27 15:43:41: Connection pour l'application stm32-kit (pid : 31785)
+2021/05/27 15:43:41: 1/3 - Start MQTT Client (pid : 31785)
+2021/05/27 15:43:41: 2/3 - Connection in progress...
+2021/05/27 15:43:41: 3/3 - Client MQTT is connected with TTN broker
+2021/05/27 15:43:41: Connexion MQTT: code retour= 0
+2021/05/27 15:43:41: Connexion MQTT: Statut= OK
 ```
 J'affiche les pid du processur père et de chaque fils pour permettre de les retrouver facilement lors par exemple d'un `ps -v` (affiche tous les processus et leurs status).
 
 Lorsqu'on recoit une donnée on doit avoir l'affichage suivant :
 ```
-2021/05/27 15:33:31: Recept message MQTT... (application : stm32-kit, pid : 31566)
-2021/05/27 15:33:31: Topic : v3/stm32-kit@ttn/devices/6e20bd50-adb4-11eb-a50e-312e6f60d0f2/up
-2021/05/27 15:33:31: data: {'barometric_pressure_0': 1014.7, 'digital_in_3': 0, 'digital_out_4': 0, 'relative_humidity_2': 55.5, 'temperature_1': 24.5}
-2021/05/27 15:33:31: 1/6 - Send request to Access Token
-2021/05/27 15:33:32: 2/6 - Request response ok
-2021/05/27 15:33:32: 3/6 - Send request to Device token
-2021/05/27 15:33:32: 4/6 - Request response ok
-2021/05/27 15:33:32: 5/6 - Send request telemetry
-2021/05/27 15:33:32: 6/6 - Request code reponse:
+2021/05/27 15:44:14: Recept message MQTT... (application : stm32-kit, pid : 31785)
+2021/05/27 15:44:14: Topic : v3/stm32-kit@ttn/devices/6e20bd50-adb4-11eb-a50e-312e6f60d0f2/up
+2021/05/27 15:44:14: data: {'barometric_pressure_0': 1014.7, 'digital_in_3': 0, 'digital_out_4': 0, 'relative_humidity_2': 54.5, 'temperature_1': 24.7}
+2021/05/27 15:44:14: 1/6 - Send request to Access Token
+2021/05/27 15:44:14: 2/6 - Request response ok
+2021/05/27 15:44:14: 3/6 - Send request to Device token
+2021/05/27 15:44:14: 4/6 - Request response ok
+2021/05/27 15:44:14: 5/6 - Send request telemetry
+2021/05/27 15:44:15: 6/6 - Request code reponse:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ```
 Les données sont bien arrivées sur Thingsboards et sont disponibles !

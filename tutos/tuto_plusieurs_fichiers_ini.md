@@ -34,31 +34,31 @@ python3 gateway_ttn_thing_1file.py
 Dans mon cas, j'ai trois applications et voici l'affichage que vous devez avoir :
 ```
 $ python3 gateway_ttn_thing_1file.py
-2021/05/27 15:17:03: Start Gateway TTN to Thingsboard (pid : 31375)
+2021/05/27 15:23:47: Start Gateway TTN to Thingsboard (pid : 31460)
 
-2021/05/27 15:17:03: Connexion for app supagro-test (pid : 31377)
-2021/05/27 15:17:03: 1/3 - Start MQTT Client
-2021/05/27 15:17:03: 2/3 - Connection in progress... 
-2021/05/27 15:17:03: 3/3 - Client MQTT is connected with TTN broker
-2021/05/27 15:17:03: subscribed topic : v3/+/devices/+/up
-2021/05/27 15:17:03: Connexion MQTT: code retour= 0
-2021/05/27 15:17:03: Connexion MQTT: Statut= OK
+2021/05/27 15:23:47: Connexion for app supagro-test (pid : 31462)
+2021/05/27 15:23:47: 1/3 - Start MQTT Client
+2021/05/27 15:23:47: 2/3 - Connection in progress... 
+2021/05/27 15:23:47: 3/3 - Client MQTT is connected with TTN broker
+2021/05/27 15:23:47: subscribed topic : v3/+/devices/+/up
+2021/05/27 15:23:47: Connexion MQTT: code retour= 0
+2021/05/27 15:23:47: Connexion MQTT: Statut= OK
 
-2021/05/27 15:17:05: Connexion for app stm32-kit (pid : 31378)
-2021/05/27 15:17:05: 1/3 - Start MQTT Client
-2021/05/27 15:17:05: 2/3 - Connection in progress... 
-2021/05/27 15:17:05: 3/3 - Client MQTT is connected with TTN broker
-2021/05/27 15:17:05: subscribed topic : v3/+/devices/+/up
-2021/05/27 15:17:05: Connexion MQTT: code retour= 0
-2021/05/27 15:17:05: Connexion MQTT: Statut= OK
+2021/05/27 15:23:49: Connexion for app stm32-kit (pid : 31464)
+2021/05/27 15:23:49: 1/3 - Start MQTT Client
+2021/05/27 15:23:49: 2/3 - Connection in progress... 
+2021/05/27 15:23:49: 3/3 - Client MQTT is connected with TTN broker
+2021/05/27 15:23:49: subscribed topic : v3/+/devices/+/up
+2021/05/27 15:23:49: Connexion MQTT: code retour= 0
+2021/05/27 15:23:49: Connexion MQTT: Statut= OK
 
-2021/05/27 15:17:07: Connexion for app hubis (pid : 31380)
-2021/05/27 15:17:07: 1/3 - Start MQTT Client
-2021/05/27 15:17:07: 2/3 - Connection in progress... 
-2021/05/27 15:17:07: 3/3 - Client MQTT is connected with TTN broker
-2021/05/27 15:17:07: subscribed topic : v3/+/devices/+/up
-2021/05/27 15:17:07: Connexion MQTT: code retour= 0
-2021/05/27 15:17:07: Connexion MQTT: Statut= OK
+2021/05/27 15:23:51: Connexion for app hubis (pid : 31465)
+2021/05/27 15:23:51: 1/3 - Start MQTT Client
+2021/05/27 15:23:51: 2/3 - Connection in progress... 
+2021/05/27 15:23:51: 3/3 - Client MQTT is connected with TTN broker
+2021/05/27 15:23:51: subscribed topic : v3/+/devices/+/up
+2021/05/27 15:23:51: Connexion MQTT: code retour= 0
+2021/05/27 15:23:51: Connexion MQTT: Statut= OK
 ```
 J'affiche les pid du processur père et de chaque fils pour permettre de les retrouver facilement lors par exemple d'un `ps -v` (affiche tous les processus et leurs status).
 

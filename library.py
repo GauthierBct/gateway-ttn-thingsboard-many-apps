@@ -48,7 +48,7 @@ def PostThingsboard( JsDATA, DeviceId):
     #print("indice fils : ", indiceFils)
    
     #comm = 'commissioning' + str(indiceFils) + '.ini'
-    comm = "commissioning_sample.ini"
+    comm = "commissioning.ini"
     dPrm = getIniParameters(comm)
     #dPrm = getIniParameters('commissioning.ini')
     headers_AccessT = {

@@ -9,18 +9,18 @@ Avant de commencer, assurez-vous :
 ---
 
 ## Fichier `commissioning.ini`
-Le template de ce fichier est [commissioning_sample_1file.ini](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/commissioning_sample_1file.ini). Sa structure est la suivante :
+Le template de ce fichier est [commissioning_sample_1file.ini](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/commissioning_sample_1file.ini). Sa structure est la suivante :
 - `[MQTT]` : pour le borker MQTT
 - `[TTN_APP_X]` : les champs à remplir pour s'abonner au topic de l'application (créer une catégorie `[TTN_APP_X]` pour chaque application, `X` étant le numéro de l'application)
 - `[THINGS]` : les informations nécessaires pour mettre les datas sur Thingsboard
 
 ## Fichier `gateway_ttn_thing_1file.py`
-Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/gateway_ttn_thing_1file.py). Par défaut le nom du fichier commissioning est : `commissioning.ini`. Vous pouvez le changer dans le programme python [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/gateway_ttn_thing_1file.py) à la ligne 9 :
+Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py). Par défaut le nom du fichier commissioning est : `commissioning.ini`. Vous pouvez le changer dans le programme python [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/gateway_ttn_thing_1file.py) à la ligne 9 :
 ```python
 file_name = "commissioning.ini"
 dPrm = getIniParameters(file_name)
 ```
-et aussi dans le fichier [`library.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/library.py) ligne 48 : 
+et aussi dans le fichier [`library.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file/library.py) ligne 48 : 
 ```python
 dPrm = getIniParameters('commissioning.ini')
 ```

@@ -45,7 +45,7 @@ def PostThingsboard( JsDATA, DeviceId):
         @param dictionary: that contains the name of the data and the data
                DeviceID: the name of the device on TTN and the device ID on Thingsboard
     """
-    dPrm = getIniParameters(sys.argv[indiceFils])
+    dPrm = getIniParameters("commissioning.ini)
     headers_AccessT = {
     'content-type': "application/json",
     'accept': "application/json"

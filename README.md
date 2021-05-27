@@ -1,4 +1,4 @@
-# gateway-ttn-thingsboard-many-apps
+# Script python pour transmettre les données de TTN (v3) vers Thingsboard (en MQTT)
 Utilisation du script Python de @guiguitt et @DDorch, pour le rendre utilisable pour plusieurs applications avec un seul script. Ce script peut tourner uniquement sur des machines compatibles aux méthodes Unix.
 
 ## Choix du dispositifs 

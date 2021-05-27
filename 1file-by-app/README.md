@@ -9,13 +9,13 @@ Avant de commencer, assurez-vous :
 ---
 
 ## Fichier `commissioning.ini`
-Le template de ce fichier est [commissioning_sample_app.ini](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/commissioning_sample_app.ini). Sa structure est la suivante :
+Le template de ce fichier est [commissioning_sample_app.ini](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file-by-app/commissioning_sample.ini). Sa structure est la suivante :
 - `[MQTT]` : pour le borker MQTT
 - `[TTN]` : les champs à remplir pour s'abonner au topic de l'application
 - `[THINGS]` : les informations nécessaires pour mettre les datas sur Thingsboard
 
 ## Fichier `gateway_ttn_thing_1file.py`
-Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/gateway_ttn_thing_1file.py).
+Le script python à exécuter est : [`gateway_ttn_thing_1file.py`](https://github.com/GauthierBct/gateway-ttn-thingsboard-many-apps/blob/main/1file-by-app/gateway_ttn_thing_filename.py).
 
 ## Lancement du script
 Ouvrez un terminal, rendez-vous dans le dossier où se trouve le fichier pythonet tapez la commande suivante :

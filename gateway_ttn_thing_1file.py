@@ -6,7 +6,7 @@ import time
 printlog("Start Gateway TTN to Thingsboard" + " (pid : " + str(os.getpid()) + ")")
 
 #file_name = input("Saisir le nom du fichier (sans le .ini) : ") + ".ini"
-file_name = "commissioning_sample.ini"
+file_name = "commissioning.ini"
 dPrm = getIniParameters(file_name)
 for key, value in dPrm.items():
 		    for key2,value in dPrm[key].items():
